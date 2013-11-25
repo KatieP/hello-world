@@ -1,0 +1,100 @@
+h1 {
+  text-align: center;
+  font-family: helvetica, arial;
+  color: white;
+  font-size: 9em;
+  padding-top: 0.6em;
+}
+
+h2 {
+ 
+}
+
+#title {
+
+}
+
+#sub-title {
+  max-width: 100%;
+  padding: 0 15% 0 15%;
+  text-align: center;
+  font-family: helvetica, arial;
+  color: white;
+  font-size: 2em;
+}
+
+#text-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  z-index: 3;
+
+}
+
+#gray-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 40em;
+  height: 40em;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+#rainbow-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 40em;
+  height: 40em;
+  z-index: 1;
+}
+
+.red, .orange, .yellow, .green, .blue, .purple {
+  min-width: 16.66%;
+  width: 16.66%;
+  float: left;
+  min-height: 100%;
+  height: 100%;
+}
+
+.red {
+  background-color:#D40202;
+  min-height: 100%;
+  height: 100%;
+  }
+
+.orange {
+  background-color:#D46502;
+  min-height: 100%;
+  height: 100%;
+}
+
+.yellow {
+  background-color:#D4A102;
+  min-height: 100%;
+  height: 100%;
+}
+
+.green {
+  background-color:#399905;
+  min-height: 100%;
+  height: 100%;
+}
+
+.blue {
+  background-color:#3cafc5;
+  min-height: 100%;
+  height: 100%;
+}
+
+.purple {
+  background-color:#520C73;
+  min-height: 100%;
+  height: 100%;
+}
