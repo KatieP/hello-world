@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+	<title>Slides Content</title>
+
+    <link href="slides.css" rel="stylesheet" type="text/css"> 
+
+
+
+<!-- Slider http://www.queness.com/post/356/create-a-vertical-horizontal-and-diagonal-sliding-content-website-with-jquery-->
+</head>
+
+<body>
+    <script src="slider-script.js"></script>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="jquery.scrollTo-1.4.3.1-min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        //get all link with class panel
+        $('a.panel').click(function () {
+                    //reset and highlight the clicked link
+            $('a.panel').removeClass('selected');
+            $(this).addClass('selected');
+            
+            //grab the current item, to be used in resize function
+            current = $(this);
+            
+                    //scroll it to the destination
+            $('#wrapper').scrollTo($(this).attr('href'), 800);        
+            
+                    //cancel the link default behavior
+            return false;
+        });
+        //resize all the items according to the new browser size
+        $(window).resize(function () {
+            
+            //call the resizePanel function
+            resizePanel();
+        });
+        
+    });
+    </script>
+
+  
+//**--------------------------------------------------------------
+
+<div id="wrapper">
+    <div id="mask">
+        <div id="item1" class="item">
+            <a name="item1"></a>
+            <div class="content">item1 
+                <a href="#item1" class="panel">1</a> | 
+                <a href="#item2" class="panel">2</a> | 
+                <a href="#item3" class="panel">3</a> | 
+                <a href="#item4" class="panel">4</a> | 
+                <a href="#item5" class="panel">5</a>
+            </div>
+        </div>
+        
+        <div id="item2" class="item">
+            <a name="item2"></a>
+            <div class="content">item2 <a href="#item1" class="panel">back</a></div>
+        </div>
+        
+        <div id="item3" class="item">
+            <a name="item3"></a>
+            <div class="content">item3 <a href="#item1" class="panel">back</a></div>
+        </div>
+        <div id="item4" class="item">
+            <a name="item4"></a>
+            <div class="content">item4 <a href="#item1" class="panel">back</a></div>
+        </div>
+        
+        <div id="item5" class="item">
+            <a name="item5"></a>
+            <div class="content">item5 <a href="#item1" class="panel">back</a></div>
+        </div>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="mask">
+        <!-- first row -->
+        <div id="item1" class="item">
+            <a name="item1"></a>
+            <div class="content">item1 
+                <a href="#item1" class="panel">1</a> | 
+                <a href="#item2" class="panel">2</a> | 
+                <a href="#item3" class="panel">3</a>
+            </div>
+        </div>
+        
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="clear"></div>
+        <!-- second row -->        
+        
+        <div class="item"></div>
+        <div id="item2" class="item">
+            <a name="item2"></a>
+            <div class="content">item2 <a href="#item1" class="panel">back</a></div>
+        </div>
+        <div class="item"></div>
+        <div class="clear"></div>
+        
+        <!-- third row -->
+        <div class="item"></div>
+        <div class="item"></div>
+        <div id="item3" class="item">
+            <a name="item3"></a>
+            <div class="content">item3 <a href="#item1" class="panel">back</a></div>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="mask">
+        <div id="item1" class="item">
+            <a name="item1"></a>
+            <div class="content">item1 
+                <a href="#item1" class="panel">1</a> | 
+                <a href="#item2" class="panel">2</a> | 
+                <a href="#item3" class="panel">3</a> | 
+                <a href="#item4" class="panel">4</a> | 
+                <a href="#item5" class="panel">5</a>
+            </div>
+        </div>
+        
+        <div id="item2" class="item">
+            <a name="item2"></a>
+            <div class="content">item2 <a href="#item1" class="panel">back</a></div>
+        </div>
+        
+        <div id="item3" class="item">
+            <a name="item3"></a>
+            <div class="content">item3 <a href="#item1" class="panel">back</a></div>
+        </div>
+        <div id="item4" class="item">
+            <a name="item4"></a>
+            <div class="content">item4 <a href="#item1" class="panel">back</a></div>
+        </div>
+        
+        <div id="item5" class="item">
+            <a name="item5"></a>
+            <div class="content">item5 <a href="#item1" class="panel">back</a></div>
+        </div>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="mask">
+        <!-- first row -->
+        <div id="item1" class="item">
+            <a name="item1"></a>
+            <div class="content">item1 
+                <a href="#item1" class="panel">1</a> | 
+                <a href="#item2" class="panel">2</a> | 
+                <a href="#item3" class="panel">3</a>
+            </div>
+        </div>
+        
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="clear"></div>
+        <!-- second row -->        
+        
+        <div class="item"></div>
+        <div id="item2" class="item">
+            <a name="item2"></a>
+            <div class="content">item2 <a href="#item1" class="panel">back</a></div>
+        </div>
+        <div class="item"></div>
+        <div class="clear"></div>
+        
+        <!-- third row -->
+        <div class="item"></div>
+        <div class="item"></div>
+        <div id="item3" class="item">
+            <a name="item3"></a>
+            <div class="content">item3 <a href="#item1" class="panel">back</a></div>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+</div>
+
+//**------------------------------------------------------------
+    <div id = "slide-container">
+        <h2>Our Model: Problems first, products second</h2>
+        <div id = "body-large">
+            <p>We've got a crazy idea; that we can solve the world's problems by gathering the world's leading experts around a problem, then figuring out how to solve it, from the data up. </p>
+
+            <p>Entrepeneaurs often seek an idea or a product they can develop. <em>Hello World</em> is different. We start with a problem and try to solve it, then seek commercial opportunities within the fabric of the problem solving process. </p>
+        </div>
+        
+        <h2>The process</h2>
+        <div id = "body-large">
+            <p>We work on solving problems from a data driven ideology. We are obsessed by changing real world metrics that matter like 'parts per million' or 'kilograms per person', instead of being driven by conventional business metrics like 'clicks' or 'market share'. Using the process outlined in <em>The Quest.</em></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
