@@ -1,3 +1,13 @@
+body {
+	background-color:white;
+    background-image: linear-gradient(#F0F0F0 1px, transparent 1px),
+        linear-gradient(90deg, #F0F0F0 1px, transparent 1px),
+        linear-gradient(rgba(230,230,230,.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(230,230,230,.3) 1px, transparent 1px);
+    background-size:100px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
 h2 {
   text-align: left;
   font-family: helvetica, arial;
@@ -25,7 +35,6 @@ h2 {
   padding-top: 0.2em;
 }
 
-
 #title {
 
 }
@@ -50,12 +59,12 @@ h2 {
 }
 
     #mask {
-        width:500%;
+        width:1200%;
         height:100%;
     }
 
     .item {
-        width:20%;
+        width:8%;
         height:100%;
         float:left;
     }
