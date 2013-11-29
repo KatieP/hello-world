@@ -10,11 +10,21 @@ h2 {
   text-align: left;
   font-family: helvetica, arial;
   color: gray;
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 1.5em;
+  padding-top: 0.2em;
+}
+
+#body-medium {
+  text-align: center;
+  font-family: helvetica, arial;
+  color: gray;
+  font-size: 1.3em;
+  line-height: 1.3em;
   padding-top: 0.2em;
   padding-top: 0.2em;
 }
+
 
 #title {
 
@@ -25,70 +35,103 @@ h2 {
   max-width: 90%;
   font-family: helvetica, arial;
   padding-left: 5%;
-  padding-right: 15%;
+  padding-right: 5%;
   z-index: 3;
 }
 
 /** Javascript slider CSS **/ 
-body {
-    height:100%;
-    width:100%;
-    margin:0;padding:0;
-}
+
 #wrapper {
     width:100%;
     height:100%;
     position:absolute;
     top:0;left:0;
-    background-color:#ccc;
     overflow:hidden;
 }
+
     #mask {
         width:500%;
         height:100%;
-        background-color:#eee;
     }
+
     .item {
         width:20%;
         height:100%;
         float:left;
-        background-color:#ddd;
+    }
+
+    .panel {
+        text-align: center;
+        font-family: helvetica, arial;
+        color: gray;
+        font-size: 0.9em;
+        line-height: 1.3em;
+        padding-top: 0.2em;
+        padding-top: 0.2em;
     }
     
     
     .content {
-        width:400px;
-        height:300px;
-        top:20%;
+        width:85%;
+        height:500px;
+        top:2%;
         margin:0 auto;
-        background-color:#aaa;
         position:relative;
     }
     
     .selected {
-        background:#fff;
+        background:red;
         font-weight:700;
     }
+
     .clear {
         clear:both;
     }
+
 
 /** Circles **/ 
 
 .circle {
   border-radius: 50%;
-  width: 5em;
-  height: 5em;
+  width: 10em;
+  height: 10em;
   background-color: yellow; 
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+
   /* width and height can be anything, as long as they're equal */
 }
 
-#circle-third {
+.circle-third {
   text-align: center;
   min-width: 25%;
   width: 25%;
   vertical-align: baseline;
   float: left;
+  margin-right: 25px;
+  margin-left: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+.clear {
+  clear:both;
+}
+
+/* Scrolling button */
+
+.scroll-button {
+  float: right;
+  color: gray;
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
 
  
