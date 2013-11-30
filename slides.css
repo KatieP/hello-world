@@ -67,6 +67,7 @@ h2 {
         width:8%;
         height:100%;
         float:left;
+        overflow: auto;
     }
 
     .panel {
@@ -78,8 +79,7 @@ h2 {
         padding-top: 0.2em;
         padding-top: 0.2em;
     }
-    
-    
+        
     .content {
         width:85%;
         height:500px;
