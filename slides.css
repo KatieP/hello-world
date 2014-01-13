@@ -97,10 +97,16 @@ body {
         text-align: center;
         font-family: helvetica, arial;
         color: gray;
-        font-size: 0.9em;
+        font-size: 0.75em;
         line-height: 1.3em;
         padding-top: 0.2em;
         padding-top: 0.2em;
+    }
+
+  a.panel {
+    text-decoration:none;
+    padding: 0 0.8em 0.8em 0em;
+    line-height: 2.0em;
     }
         
     .content {
@@ -162,7 +168,7 @@ body {
 .grey-button {
   text-align: center;
   font-size: 1.0em;
-  padding: 25% 70% 25% 70%;
+  padding: 15px 35px 15px 35px;
   width: 20%;
   border:2px solid;
   border-radius:10px;
@@ -190,9 +196,9 @@ a.grey-button {
 
 .grey-button-container {
 float: right;
-margin-right: 3.0em;
+margin-right: 1.0em;
 margin-top: 1.0em;
-margin-bottom: 1.0em;
+margin-bottom: 2.5em;
 
 }
 

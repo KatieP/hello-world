@@ -31,6 +31,27 @@
 	    });
 	    
 	});
+
+    $(document).ready(function() {
+    
+        $('a.grey-button').click(function () {
+    
+            $('a.grey-button').removeClass('selected');
+            $(this).addClass('selected');
+            
+            current = $(this);
+            
+            $('#wrapper').scrollTo($(this).attr('href'), 800);      
+            
+            return false;
+        });
+    
+        $(window).resize(function () {
+            resizePanel();
+        });
+        
+    });
+
 	
 	function resizePanel() {
 	
@@ -70,18 +91,24 @@
                         <div class="clear"></div>
                     
                     </div>
-                    <a href="#item1"  class="panel">Our Model</a> | 
-                    <a href="#item2"  class="panel">The Process</a> | 
-                    <a href="#item3"  class="panel">Data #1</a> | 
-                    <a href="#item4"  class="panel">Goals #2</a> | 
-                    <a href="#item5"  class="panel">Vizualisation #3</a>
-                    <a href="#item6"  class="panel">Idea Storm #4</a> | 
-                    <a href="#item7"  class="panel">Idea Evaluation #5</a> | 
-                    <a href="#item8"  class="panel">Policy Design #6</a> | 
-                    <a href="#item9"  class="panel">Behaviour Change #7</a> | 
-                    <a href="#item10" class="panel">Cults & Tribes #8</a>
-                    <a href="#item11" class="panel">Technology #9</a>
-                    <a href="#item12" class="panel">Contact</a>
+                    <hr />
+                
+                    <a href="#item3"  class="panel">Data ></a> 
+                    <a href="#item4"  class="panel">Goals ></a>
+                    <a href="#item5"  class="panel">Vizualisation ></a>
+                    <a href="#item6"  class="panel">Idea Storm ></a>  
+                    <a href="#item7"  class="panel">Evaluation ></a>  
+                    <a href="#item8"  class="panel">Policy ></a> 
+                    <a href="#item9"  class="panel">Behaviour Change ></a>
+                    <a href="#item10" class="panel">Game Design ></a>   
+                    <a href="#item11" class="panel">Cults & Tribes ></a>
+                    <a href="#item12" class="panel">Technology</a>
+
+                    <br />
+
+                    <a href="#item1"  class="panel">Home</a>  
+                    <a href="#item13" class="panel">Contact</a>
+                    <a href="#item14" class="panel">Join</a>
                 </div>
             </div>
         </div>
@@ -95,9 +122,9 @@
                     <p>We work on solving problems from a data driven ideology. We are obsessed by changing real world metrics <em>that matter</em> like 'parts per million' or 'kilograms per person', instead of being driven by conventional business metrics like 'clicks', 'users' or 'market share'. </p>
                     <p>We approach problems using the process designed in <em><a href="">The Quest.</a></em> The data, or metrication of the problem is always king. Keep reading -></p>
                 </div>
-                <a href="#item3" class="panel">Next -&gt;</a>
+                <a href="#item3" class="panel">Next</a>
                 <br />
-                <a href="#item1" class="panel">&lt;- Back</a>
+                <a href="#item1" class="panel">Back</a>
             </div>
 
         </div>
