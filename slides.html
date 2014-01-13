@@ -67,6 +67,15 @@
 	    $('#wrapper').scrollTo($('a.selected').attr('href'), 0);
 	        
 	}
+
+    function print_footer() {
+
+        var footer_element = document.getElementById('footer');
+        if(footer_element != null && footer_element != typeof 'undefined')
+            {
+            footer_element.innerHTML = "<span><hr />FOOTER</span>";
+            }
+    }
 	
 	</script>
 </head>
@@ -83,7 +92,7 @@
                     <div class="title-text">Our Model: Problems first, products second</div>
                     <div id="body-large">
                         <p>We've got a crazy idea; that we can solve the world's problems by gathering the world's leading experts around a problem, then figuring out how to solve it, from the data up. </p>
-                        <p>Entrepeneaurs often seek an idea or a product they can develop. <em>Hello World</em> is different. We start with a problem and try to solve it, then seek commercial opportunities within the fabric of the problem solving process. </p>
+                        <p>Entrepeneaurs often seek an idea or a product they can develop. <em>Hello World</em> is different. We seek commercial opportunities within the fabric of the problem solving process. </p>
                         <div class="grey-button-container">
                             <a href="#item2" class="grey-button">Next</a>
                         </div>
@@ -91,8 +100,9 @@
                         <div class="clear"></div>
                     
                     </div>
+                    
+                    <!--FOOTER-->
                     <hr />
-                
                     <a href="#item3"  class="panel">Data ></a> 
                     <a href="#item4"  class="panel">Goals ></a>
                     <a href="#item5"  class="panel">Vizualisation ></a>
@@ -117,14 +127,23 @@
 <!------------------------------------------------------------------  --> 
         <div id="item2" class="item">
             <div class="content">
-                <h2>The process</h2>
+                <div class="title-text">The process</div>
                 <div id="body-large">
                     <p>We work on solving problems from a data driven ideology. We are obsessed by changing real world metrics <em>that matter</em> like 'parts per million' or 'kilograms per person', instead of being driven by conventional business metrics like 'clicks', 'users' or 'market share'. </p>
-                    <p>We approach problems using the process designed in <em><a href="">The Quest.</a></em> The data, or metrication of the problem is always king. Keep reading -></p>
+
+                    <p>The data, or metrication of the problem is always king.</p>
                 </div>
-                <a href="#item3" class="panel">Next</a>
-                <br />
+
+                <div class="grey-button-container">
+                    <a href="#item3" class="grey-button">Next</a>
+                </div>
                 <a href="#item1" class="panel">Back</a>
+
+                <div class="clear"></div>
+
+                <div id="footer"></div>
+
+               
             </div>
 
         </div>
@@ -137,7 +156,7 @@
             <a name="item3"></a>
             <div class="content">
                 <div id = "slide-container">
-                    <h2>Data #1</h2>
+                    <div class="title-text">Data #1</div>
                     <div id = "body-large">
                         
                         <p><em>"You can achieve amazing progress if you set a clear goal and find a measure that will drive progress toward that goal. This may seem pretty basic, but it is amazing to me how often it is not done and how hard it is to get right."</em> - Bill Gates, Annual address 2013</p>
@@ -147,9 +166,19 @@
                         
                     </div>
                     <div class="clear"></div>
-                    <a href="#item4" class="panel">Next -&gt;</a>
+                    
+                    <div class = "grey-button-container">
+                        <a href="#item4" class="grey-button">Next</a>
+                    </div>
+                    
                     <br />
-                    <a href="#item2" class="panel">&lt;- Back</a>
+                    
+                    <a href="#item2" class="panel">Back</a>
+
+                    <div class="clear"></div>
+
+                    <div id="footer"></div>
+
                 </div>
             </div>
         </div>
@@ -159,14 +188,22 @@
             <a name="item4"></a>
             <div class="content">
                 <div id = "slide-container">
-                	<h2>Goals as real world metrics  #2</h2>    
+                	<div class="title-text">Goals as real world metrics  #2</div>
                 	<div id="body-large">
                     	<p>All journeys need a destination. The next step is to create a quantitative goal. The goal  is developed from a meaningful metric that most clearly indicates that the problem is 'solved'. Meanigful metrics might be goals such as 'to reduce waste to 100 kg per person per year' or 'reduce gasoline useage to 50 gallons per year'. </p>
                 	</div>
                 	<div class="clear"></div>
-                	<a href="#item5" class="panel">Next -&gt;</a>
-                	<br />
-                	<a href="#item3" class="panel">&lt;- Back</a>
+                    <div class="grey-button-container">
+                	   <a href="#item5" class="grey-button">Next</a>
+                	</div>
+                    <br />
+                	<a href="#item3" class="panel">Back</a>
+
+
+                    <div class="clear"></div>
+
+                    <div id="footer"></div>
+
             	</div>
             </div>
         </div>
@@ -177,7 +214,7 @@
             <a name="item5"></a>
             <div class="content">
                 <div id="slide-container">
-	                <h2>Visualize the future #3</h2>    
+	                <div class="title-text">Visualize the future #3</div>    
 	                <div id="body-large">
 	                    
                         <p><em>"If you want to build a ship, don't drum up people to collect wood and don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea."</em> - Antoine de Saint Exupéry, writer and aviator.</P> 
@@ -188,9 +225,11 @@
 	                   
 	                </div>
 	                <div class="clear"></div>
-	                <a href="#item6" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+	                   <a href="#item6" class="grey-button">Next</a>
+                    </div>
 	                <br />
-	                <a href="#item4" class="panel">&lt;- Back</a>
+	                <a href="#item4" class="panel">Back</a>
 	            </div>
 	        </div>
 	    </div>
@@ -200,14 +239,16 @@
             <a name="item6"></a>
             <div class="content">
             	<div id = "slide-container">
-                    <h2>Idea storming #4</h2>
+                    <div class="title-text">Idea storming #4</div>
                     <div id = "body-large">
                         <p>How do we get from here to there? Once the data is collected and the metric goal is established, we then brainstorm ideas to help solve the problem. We use the data (where we are now) and vizualisation (where we want to go) as the primary compass.</p>
                         <p>This is where we unleash our imagination to brainstorm every idea we can think of to help solve the problem.</p>
                         
                     </div>
                     <div class="clear"></div>
-                    <a href="#item7" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+                        <a href="#item7" class="grey-button">Next</a>
+                    </div>
                     <br />
                     <a href="#item5" class="panel">&lt;- Back</a>
                 </div>
@@ -219,16 +260,18 @@
             <a name="item7"></a>
             <div class="content">
                 <div id = "slide-container">
-                    <h2>Idea Assesment #5</h2>       
+                    <div class="title-text">Idea Assesment #5</div>       
                     <div id = "body-large">
                         <p>Which ideas should we pursue? We map all potentential ideas on a scale of ease to implement versus effectiveness on the goal.</p> 
                         <p>Once the ideas are mapped, we can chose the ideas to pursue that are the most <em>effective</em> and the easiest to implement.</p>
                         <p>An idea is only as valuable as it's effect on the problem's data.</p>
                     </div>
                     <div class="clear"></div>
-                    <a href="#item8" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+                        <a href="#item8" class="grey-button">Next</a>
+                    </div>
                     <br />
-					<a href="#item6" class="panel">&lt;- Back</a>
+					<a href="#item6" class="panel">Back</a>
                 </div>
             </div>
         </div>
@@ -238,14 +281,16 @@
             <a name="item8"></a>
             <div class="content">
                 <div id = "slide-container">
-                    <h2>Policy design #6</h2>
+                    <div class="title-text">Policy design #6</div>
                     <div id = "body-large">
                         <p>Problems usually require government policy in order to reach their full potential. We problem-solve what policies would be most effective at solving the problem and what style of campaign is needed to have the policy approved into law.</p>
                     </div>
                     <div class="clear"></div>
-                    <a href="#item9" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+                        <a href="#item9" class="grey-button">Next</a>
+                    </div>
                     <br />
-                    <a href="#item7" class="panel">&lt;- Back</a>
+                    <a href="#item7" class="panel">Back</a>
                 </div>    
             </div>
         </div>
@@ -255,16 +300,18 @@
             <a name="item9"></a>
             <div class="content">
                 <div id = "slide-container">
-                    <h2>Behavioural change & gamification #7</h2>
+                    <div class="title-text">Behavioural change & gamification #7</div>
                     <div id = "body-large">    
 	                    <p>Once we have the data, we can isolate what behaviours need to be created, removed or enhanced in order to acheive the goal.  From there, we implement game principles and motivational design to the people who are engaged in the problem. Adding social competition truly ignites the process of change.<p/> 
 	                          
 	                    
 	                </div>
 	                <div class="clear"></div>
-	                <a href="#item10" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+	                   <a href="#item10" class="grey-button">Next</a>
+                    </div>
 	                <br />
-	                <a href="#item8" class="panel">&lt;- Back</a>
+	                <a href="#item8" class="panel">Back</a>
 	            </div>
             </div>
         </div>
@@ -275,15 +322,17 @@
             <a name="item10"></a>
             <div class="content">
                 <div id = "slide-container">
-                    <h2>Tribes & evangelists #8</h2>
+                    <div class="title-text">Tribes & evangelists #8</div>
                     <div id = "body-large">
                         <p>All change is driven by powerful cultural movements. But all ideologies must be created. We use branding, media and social marketing to build tribes and evangelists who drive the change in the data. Every great movement and brand is built from a core cult following.</p>
                 
                     </div>
                     <div class="clear"></div>
-                    <a href="#item11" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+                        <a href="#item11" class="grey-button">Next</a>
+                    </div>
                     <br />
-                    <a href="#item9" class="panel">&lt;- Back</a>
+                    <a href="#item9" class="panel">Back</a>
                 </div>    
             </div>
         </div>
@@ -294,7 +343,7 @@
             <a name="item11"></a>
             <div class="content">
                 <div id = "slide-container">
-                    <h2>Technology #9</h2>
+                    <div class="title-text">Technology #9</div>
                     <div id="body-large">
                         <p>Once the problem has been thouroughly assesed, we can determine what tech solutions required to facilitate the acheivement of the goal.</P> 
 
@@ -302,9 +351,11 @@
                         
                     </div>
 					<div class="clear"></div>
-                    <a href="#item12" class="panel">Next -&gt;</a>
+                    <div class="grey-button-container">
+                        <a href="#item12" class="grey-button">Next</a>
+                    </div>
                     <br />
-					<a href="#item10" class="panel">&lt;- Back</a>
+					<a href="#item10" class="panel">Back</a>
                 </div>
             </div>
         </div>
@@ -315,7 +366,7 @@
             <a name="item12"></a>
             <div class="content">
                 <div id="slide-container">
-                    <h2>Divisions</h2>
+                    <div class="title-text">Divisions</div>
                     <div class="circle-third">
                         <div class ="circle"></div>
                         <div id="body-medium">
@@ -338,9 +389,9 @@
                         </div>
                     </div>
                     <div class="clear"></div>
-                    <a href="#item1" class="panel">Home -&gt;</a>
+                    <a href="#item1" class="panel">Home</a>
                     <br />
-                    <a href="#item11" class="panel">&lt;- Back</a>
+                    <a href="#item11" class="panel">Back</a>
                 </div>
             </div>
         </div>
@@ -349,5 +400,10 @@
 <!------------------------------------------------------------------  --> 
     </div>
 </div>
+
+<script type="text/javascript">
+    print_footer();
+  </script>
+
 </body>
 </html>

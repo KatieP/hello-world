@@ -118,8 +118,16 @@ body {
     }
     
     .selected {
-        background:red;
+        font-size: 1.0em;
+        color: #C4C4C4;
+        background:#FA4884;
         font-weight:700;
+        border-radius:5px;
+        width: 20%;
+    }
+
+    a.selected {
+      padding: 10px 25px 10px 25px;
     }
 
     .clear {
@@ -167,6 +175,7 @@ body {
 
 .grey-button {
   text-align: center;
+  font-family: helvetica, arial, tahoma;
   font-size: 1.0em;
   padding: 15px 35px 15px 35px;
   width: 20%;
