@@ -1,409 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
-    "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Hello World</title>
-
-	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-	
-	<link href="slides.css" rel="stylesheet" type="text/css"> 
-	
-	<script>
-	
-	$(document).ready(function() {
-	
-	    $('a.panel').click(function () {
-	
-	        $('a.panel').removeClass('selected');
-	        $(this).addClass('selected');
-	        
-	        current = $(this);
-	        
-	        $('#wrapper').scrollTo($(this).attr('href'), 800);      
-	        
-	        return false;
-	    });
-	
-	    $(window).resize(function () {
-	        resizePanel();
-	    });
-	    
-	});
-
-    $(document).ready(function() {
-    
-        $('a.grey-button').click(function () {
-    
-            $('a.grey-button').removeClass('selected');
-            $(this).addClass('selected');
-            
-            current = $(this);
-            
-            $('#wrapper').scrollTo($(this).attr('href'), 800);      
-            
-            return false;
-        });
-    
-        $(window).resize(function () {
-            resizePanel();
-        });
-        
-    });
-
-	
-	function resizePanel() {
-	
-	    width = $(window).width();
-	    height = $(window).height();
-	    
-	    mask_width = width * $('.item').length;
-
-	    $('#debug').html(width  + ' ' + height + ' ' + mask_width);
-
-	    $('#wrapper, .item').css({width: width, height: height});
-	    $('#mask').css({width: mask_width, height: height});
-	    $('#wrapper').scrollTo($('a.selected').attr('href'), 0);
-	        
-	}
-
-    function print_footer() {
-
-        var footer_element = document.getElementById('footer');
-        if(footer_element != null && footer_element != typeof 'undefined')
-            {
-            footer_element.innerHTML = "<span><hr />FOOTER</span>";
-            }
-    }
-	
-	</script>
-</head>
-
-<body>
-<div id="wrapper">
-    <div id="mask">
-
-<!------------------------------------------------------------------  -->
-        <div id="item1" class="item">
-            <a name="item1"></a>
-            <div class="content">
-                <div id="slide-container">
-                    <div class="title-text">Our Model: Problems first, products second</div>
-                    <div id="body-large">
-                        <p>We've got a crazy idea; that we can solve the world's problems by gathering the world's leading experts around a problem, then figuring out how to solve it, from the data up. </p>
-                        <p>Entrepeneaurs often seek an idea or a product they can develop. <em>Hello World</em> is different. We seek commercial opportunities within the fabric of the problem solving process. </p>
-                        <div class="grey-button-container">
-                            <a href="#item2" class="grey-button">Next</a>
-                        </div>
-
-                        <div class="clear"></div>
-                    
-                    </div>
-                    
-                    <!--FOOTER-->
-                    <hr />
-                    <a href="#item3"  class="panel">Data ></a> 
-                    <a href="#item4"  class="panel">Goals ></a>
-                    <a href="#item5"  class="panel">Vizualisation ></a>
-                    <a href="#item6"  class="panel">Idea Storm ></a>  
-                    <a href="#item7"  class="panel">Evaluation ></a>  
-                    <a href="#item8"  class="panel">Policy ></a> 
-                    <a href="#item9"  class="panel">Behaviour Change ></a>
-                    <a href="#item10" class="panel">Game Design ></a>   
-                    <a href="#item11" class="panel">Cults & Tribes ></a>
-                    <a href="#item12" class="panel">Technology</a>
-
-                    <br />
-
-                    <a href="#item1"  class="panel">Home</a>  
-                    <a href="#item13" class="panel">Contact</a>
-                    <a href="#item14" class="panel">Join</a>
-                </div>
-            </div>
-        </div>
-
-
-<!------------------------------------------------------------------  --> 
-        <div id="item2" class="item">
-            <div class="content">
-                <div class="title-text">The process</div>
-                <div id="body-large">
-                    <p>We work on solving problems from a data driven ideology. We are obsessed by changing real world metrics <em>that matter</em> like 'parts per million' or 'kilograms per person', instead of being driven by conventional business metrics like 'clicks', 'users' or 'market share'. </p>
-
-                    <p>The data, or metrication of the problem is always king.</p>
-                </div>
-
-                <div class="grey-button-container">
-                    <a href="#item3" class="grey-button">Next</a>
-                </div>
-                <a href="#item1" class="panel">Back</a>
-
-                <div class="clear"></div>
-
-                <div id="footer"></div>
-
-               
-            </div>
-
-        </div>
-        
-
-
-<!------------------------------------------------------------------  -->
-
-        <div id="item3" class="item">
-            <a name="item3"></a>
-            <div class="content">
-                <div id = "slide-container">
-                    <div class="title-text">Data #1</div>
-                    <div id = "body-large">
-                        
-                        <p><em>"You can achieve amazing progress if you set a clear goal and find a measure that will drive progress toward that goal. This may seem pretty basic, but it is amazing to me how often it is not done and how hard it is to get right."</em> - Bill Gates, Annual address 2013</p>
-
-                        <p>The first step in solving a problem is to understand it deeply. We start every problem by capturing the data as real-time as possible. Measurement is the first base of behaviour change.</p> 
-                        <p><em>"Merely measuring something has an uncanny tendency to improve it."</em> - Paul Graham, YC</p>
-                        
-                    </div>
-                    <div class="clear"></div>
-                    
-                    <div class = "grey-button-container">
-                        <a href="#item4" class="grey-button">Next</a>
-                    </div>
-                    
-                    <br />
-                    
-                    <a href="#item2" class="panel">Back</a>
-
-                    <div class="clear"></div>
-
-                    <div id="footer"></div>
-
-                </div>
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->        
-        <div id="item4" class="item">
-            <a name="item4"></a>
-            <div class="content">
-                <div id = "slide-container">
-                	<div class="title-text">Goals as real world metrics  #2</div>
-                	<div id="body-large">
-                    	<p>All journeys need a destination. The next step is to create a quantitative goal. The goal  is developed from a meaningful metric that most clearly indicates that the problem is 'solved'. Meanigful metrics might be goals such as 'to reduce waste to 100 kg per person per year' or 'reduce gasoline useage to 50 gallons per year'. </p>
-                	</div>
-                	<div class="clear"></div>
-                    <div class="grey-button-container">
-                	   <a href="#item5" class="grey-button">Next</a>
-                	</div>
-                    <br />
-                	<a href="#item3" class="panel">Back</a>
-
-
-                    <div class="clear"></div>
-
-                    <div id="footer"></div>
-
-            	</div>
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->
-        
-        <div id="item5" class="item">
-            <a name="item5"></a>
-            <div class="content">
-                <div id="slide-container">
-	                <div class="title-text">Visualize the future #3</div>    
-	                <div id="body-large">
-	                    
-                        <p><em>"If you want to build a ship, don't drum up people to collect wood and don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea."</em> - Antoine de Saint Exupéry, writer and aviator.</P> 
-	                    
-                        <p>The secret ingedient of great leaders is vision. What will the world look like when this problem is solved? How will it work? What systems will it use? We illustrate what the world will be like when the problem is solved - a process that unleashes brilliant constructive ideas. </P>
-
-                        <p>The vizualisation becomes the guiding star that inspires communities to take on the journey of change. </p>
-	                   
-	                </div>
-	                <div class="clear"></div>
-                    <div class="grey-button-container">
-	                   <a href="#item6" class="grey-button">Next</a>
-                    </div>
-	                <br />
-	                <a href="#item4" class="panel">Back</a>
-	            </div>
-	        </div>
-	    </div>
-
-<!------------------------------------------------------------------  -->
-        <div id="item6" class="item">
-            <a name="item6"></a>
-            <div class="content">
-            	<div id = "slide-container">
-                    <div class="title-text">Idea storming #4</div>
-                    <div id = "body-large">
-                        <p>How do we get from here to there? Once the data is collected and the metric goal is established, we then brainstorm ideas to help solve the problem. We use the data (where we are now) and vizualisation (where we want to go) as the primary compass.</p>
-                        <p>This is where we unleash our imagination to brainstorm every idea we can think of to help solve the problem.</p>
-                        
-                    </div>
-                    <div class="clear"></div>
-                    <div class="grey-button-container">
-                        <a href="#item7" class="grey-button">Next</a>
-                    </div>
-                    <br />
-                    <a href="#item5" class="panel">&lt;- Back</a>
-                </div>
-            </div> 	
-        </div>
-
-<!------------------------------------------------------------------  -->
-        <div id="item7" class="item">
-            <a name="item7"></a>
-            <div class="content">
-                <div id = "slide-container">
-                    <div class="title-text">Idea Assesment #5</div>       
-                    <div id = "body-large">
-                        <p>Which ideas should we pursue? We map all potentential ideas on a scale of ease to implement versus effectiveness on the goal.</p> 
-                        <p>Once the ideas are mapped, we can chose the ideas to pursue that are the most <em>effective</em> and the easiest to implement.</p>
-                        <p>An idea is only as valuable as it's effect on the problem's data.</p>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="grey-button-container">
-                        <a href="#item8" class="grey-button">Next</a>
-                    </div>
-                    <br />
-					<a href="#item6" class="panel">Back</a>
-                </div>
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->
-        <div id="item8" class="item">
-            <a name="item8"></a>
-            <div class="content">
-                <div id = "slide-container">
-                    <div class="title-text">Policy design #6</div>
-                    <div id = "body-large">
-                        <p>Problems usually require government policy in order to reach their full potential. We problem-solve what policies would be most effective at solving the problem and what style of campaign is needed to have the policy approved into law.</p>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="grey-button-container">
-                        <a href="#item9" class="grey-button">Next</a>
-                    </div>
-                    <br />
-                    <a href="#item7" class="panel">Back</a>
-                </div>    
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->
-        <div id="item9" class="item">
-            <a name="item9"></a>
-            <div class="content">
-                <div id = "slide-container">
-                    <div class="title-text">Behavioural change & gamification #7</div>
-                    <div id = "body-large">    
-	                    <p>Once we have the data, we can isolate what behaviours need to be created, removed or enhanced in order to acheive the goal.  From there, we implement game principles and motivational design to the people who are engaged in the problem. Adding social competition truly ignites the process of change.<p/> 
-	                          
-	                    
-	                </div>
-	                <div class="clear"></div>
-                    <div class="grey-button-container">
-	                   <a href="#item10" class="grey-button">Next</a>
-                    </div>
-	                <br />
-	                <a href="#item8" class="panel">Back</a>
-	            </div>
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->        
-
-        <div id="item10" class="item">
-            <a name="item10"></a>
-            <div class="content">
-                <div id = "slide-container">
-                    <div class="title-text">Tribes & evangelists #8</div>
-                    <div id = "body-large">
-                        <p>All change is driven by powerful cultural movements. But all ideologies must be created. We use branding, media and social marketing to build tribes and evangelists who drive the change in the data. Every great movement and brand is built from a core cult following.</p>
-                
-                    </div>
-                    <div class="clear"></div>
-                    <div class="grey-button-container">
-                        <a href="#item11" class="grey-button">Next</a>
-                    </div>
-                    <br />
-                    <a href="#item9" class="panel">Back</a>
-                </div>    
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->  
-
-        <div id="item11" class="item">
-            <a name="item11"></a>
-            <div class="content">
-                <div id = "slide-container">
-                    <div class="title-text">Technology #9</div>
-                    <div id="body-large">
-                        <p>Once the problem has been thouroughly assesed, we can determine what tech solutions required to facilitate the acheivement of the goal.</P> 
-
-                        <p>We create apps, games, data APIs and websites that the community needs.</p>
-                        
-                    </div>
-					<div class="clear"></div>
-                    <div class="grey-button-container">
-                        <a href="#item12" class="grey-button">Next</a>
-                    </div>
-                    <br />
-					<a href="#item10" class="panel">Back</a>
-                </div>
-            </div>
-        </div>
-
-<!------------------------------------------------------------------  -->
-        
-        <div id="item12" class="item">
-            <a name="item12"></a>
-            <div class="content">
-                <div id="slide-container">
-                    <div class="title-text">Divisions</div>
-                    <div class="circle-third">
-                        <div class ="circle"></div>
-                        <div id="body-medium">
-                            <p>Minds</p>
-                            <p>Strategic plans, thought leadership, problem solving, creative innovation, project management, business development</p>
-                        </div>
-                    </div>
-                    <div class = "circle-third">
-                        <div class ="circle"></div>
-                        <div id="body-medium">
-                            <p>Investment</p>
-                            <p>Facilitate investment into products which assist in solving the problem</p>
-                        </div>
-                    </div>
-                    <div class = "circle-third">
-                        <div class ="circle"></div>
-                        <div id="body-medium">
-                            <p>Labs</p>
-                            <p>Tech products including apps, APIs, data systems and games that help save the world</p>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                    <a href="#item1" class="panel">Home</a>
-                    <br />
-                    <a href="#item11" class="panel">Back</a>
-                </div>
-            </div>
-        </div>
-
-
-<!------------------------------------------------------------------  --> 
-    </div>
-</div>
-
-<script type="text/javascript">
-    print_footer();
-  </script>
-
-</body>
+	<head>
+		<title>Hello Slideshow!</title>
+		<meta charset="UTF-8">
+		<link href="css/slides.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<noscript>
+			<div style="text-align:center;">
+				<h1>You have Javascript disabled!</h1>
+				<h3>Please enable Javascript to view this presentation!</h3>
+			</div>
+		</noscript>
+		<!--[if IE 6]>
+			<div style="text-align:center;">
+				<h3>You have an outdated browser, please visit <a href="http://browsehappy.com/">Browse Happy</a> to install a recent browser</h3>
+			</div>
+		<![endif]-->
+		<!--[if IE 7]>
+			<div style="text-align:center;">
+				<h3>You have an outdated browser, please visit <a href="http://browsehappy.com/">Browse Happy</a> to install a recent browser</h3>
+			</div>
+		<![endif]-->
+		<!--[if IE 8]>
+			<div style="text-align:center;">
+				<h3>You have an outdated browser, please visit <a href="http://browsehappy.com/">Browse Happy</a> to install a recent browser</h3>
+			</div>
+		<![endif]-->
+		<!--[if IE 9]>
+			<div style="text-align:center;">
+				<h3>You have an outdated browser, please visit <a href="http://browsehappy.com/">Browse Happy</a> to install a recent browser</h3>
+			</div>
+		<![endif]-->
+		<div class="slides-container"></div>
+		<div class="slide-controls">
+			<input class="button previous" type="button" value="Previous" onclick="slideshow.prev_animation()" />
+			<input class="button next" type="button" value="Next" onclick="slideshow.next_animation()" />
+		</div>
+		<div class="footer">
+			<a id="link0" href="#our-model" class="slide-link">Our Model&nbsp;&raquo;</a>
+			<a id="link1" href="#the-process" class="slide-link">The Process&nbsp;&raquo;</a>
+			<a id="link2" href="#data" class="slide-link">Data&nbsp;&raquo;</a>
+      <a id="link3" href="#goals" class="slide-link">Goals&nbsp;&raquo;</a>
+      <a id="link4" href="#visualize" class="slide-link">Vizualisation&nbsp;&raquo;</a>
+      <a id="link5" href="#idea-storming" class="slide-link">Idea Storm&nbsp;&raquo;</a>
+      <a id="link6" href="#idea-assessment" class="slide-link">Evaluation&nbsp;&raquo;</a>
+      <a id="link7" href="#policy-design" class="slide-link">Policy&nbsp;&raquo;</a>
+      <a id="link8" href="#behavioral-change" class="slide-link">Behaviour Change&nbsp;&raquo;</a>
+      <a id="link9" href="#game-design" class="slide-link">Game Design&nbsp;&raquo;</a>
+      <a id="link10" href="#tribes-and-evangelists" class="slide-link">Tribes&nbsp;&raquo;</a>
+      <a id="link11" href="#technology" class="slide-link">Technology&nbsp;&raquo;</a>
+      <br />
+      <a id="linkHome" href="index.html">Home</a>
+      <a id="linkContact" href="contact.html">Contact</a>
+      <a id="linkJoin" href="join.html">Join</a>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
+	</body>
 </html>
