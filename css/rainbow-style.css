@@ -1,12 +1,20 @@
 
+body{
+  background: url('../img/rainbow_bg.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #title {
   font-weight: bold;
   text-align: center;
   font-family: helvetica, arial;
   color: white;
   font-size: 9em;
-  padding: 0.8em 0.4em 0.3em 0.4em;
-
+  margin: 0 auto;
+  padding-top:1em;
 }
 
 #sub-title {
