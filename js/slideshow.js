@@ -17,8 +17,8 @@ var slides_data = [
 	{
 		image_url: "",
 		title: "Data first",
-		text: "<p><em>&ldquo;You can achieve amazing progress if you set a clear goal and find a measure that will drive progress toward that goal. This may seem pretty basic, but it is amazing to me how often it is not done and how hard it is to get right.&rdquo;</em> - Bill Gates, Annual address 2013</p><p>The first step in solving a problem is to understand it deeply. We start every solution by capturing the data as real-time as possible.</p>",
-		quote: "<p><em>&ldquo;Merely measuring something has an uncanny tendency to improve it.&rdquo;</em><br/>Paul Graham, YC</p>"
+		text: "<p><em>&ldquo;You can achieve amazing progress if you set a clear goal and find a measure that will drive progress toward that goal. This may seem pretty basic, but it is amazing to me how often it is not done and how hard it is to get right.&rdquo;</em> - Bill Gates, <a target=\"_blank\" href=\"http://www.gatesfoundation.org/Who-We-Are/Resources-and-Media/Annual-Letters-List/Annual-Letter-2013\">Annual Address 2013</a></p><p>The first step in solving a problem is to understand it deeply. We start every solution by capturing the data as real-time as possible.</p>",
+		quote: "<p><em>&ldquo;Merely measuring something has an uncanny tendency to improve it.&rdquo;</em><br/>Paul Graham, <a href=\"http://www.paulgraham.com/13sentences.html\">Y Combinator</a></p>"
 	},
 	{
 		image_url: "",
