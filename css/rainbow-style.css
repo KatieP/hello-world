@@ -11,7 +11,7 @@
 
 #sub-title {
   max-width: 100%;
-  padding: 0 16% 0 16%;
+  padding: 0 25% 0 25%;
   text-align: center;
   font-family: helvetica, arial;
   color: white;
@@ -67,8 +67,10 @@
   top: 0px;
   left: 0px;
   min-width: 100%;
-  min-height: 40em;
-  height: 40em;
+  
+  min-height: 100%;
+  height: 100%;
+
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -78,8 +80,10 @@
   top: 0px;
   left: 0px;
   min-width: 100%;
-  min-height: 40em;
-  height: 40em;
+  
+  min-height: 100%;
+  height: 100%;
+
   z-index: 1;
 }
 
